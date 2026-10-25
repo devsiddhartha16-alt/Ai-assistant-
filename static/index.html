@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JARVIS-X AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>JARVIS-X</h1>
+    <p>Groq + Gemini AI Assistant</p>
+
+    <select id="provider">
+      <option value="auto">Auto — Groq, তারপর Gemini</option>
+      <option value="groq">Groq AI</option>
+      <option value="gemini">Gemini AI</option>
+    </select>
+
+    <section id="messages" aria-live="polite">
+      <p>স্বাগতম! প্রশ্ন লিখে পাঠাও।</p>
+    </section>
+
+    <form id="chat-form">
+      <textarea id="message" placeholder="তোমার প্রশ্ন..." required></textarea>
+      <button id="send" type="submit">Send</button>
+    </form>
+    <p id="status">Ready</p>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
