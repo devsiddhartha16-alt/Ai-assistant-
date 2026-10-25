@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #101827;
+  color: #f5f7ff;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 760px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 { color: #70a5ff; }
+
+select, textarea, button {
+  font: inherit;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+select, textarea {
+  width: 100%;
+  margin: 8px 0;
+  background: #202c3e;
+  color: white;
+  border: 1px solid #42516a;
+}
+
+#messages {
+  min-height: 45vh;
+  padding: 12px 0;
+}
+
+.bubble {
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.user { background: #245fc4; }
+.ai { background: #202c3e; }
+
+button {
+  border: 0;
+  background: #3678f5;
+  color: white;
+  cursor: pointer;
+}
+
+#status { color: #a8b4c8; }
